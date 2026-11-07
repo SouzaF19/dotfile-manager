@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "dotfile-manager"
 version = "0.1.0"
 authors = [
-  { name="SouzaF19", email="seu-email@exemplo.com" },
+  { name="SouzaF19"},
 ]
 description = "A simple Python tool to track and manage your dotfiles."
 readme = "README.md"
