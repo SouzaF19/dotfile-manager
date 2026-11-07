@@ -1,46 +1,44 @@
-# README.md
-
 # Dotfile Manager 🛠️
 
-A lightweight Python CLI tool to track, manage, and backup your configuration files (dotfiles) across different environments.
+Uma ferramenta leve de CLI em Python para rastrear, gerenciar e fazer backup de seus arquivos de configuração (dotfiles) em diferentes ambientes.
 
-## 🚀 Features
+## 🚀 Funcionalidades
 
-- **Track Files**: Easily add files from your home directory to a tracking list.
-- **Automatic Scan**: Detect common dotfiles (like `.bashrc`, `.zshrc`, `.gitconfig`) automatically.
-- **Centralized Config**: Keeps a JSON record of all your tracked files.
-- **Cross-Platform**: Works on Linux, macOS, and Windows.
+- **Rastrear Arquivos**: Adicione facilmente arquivos do seu diretório home a uma lista de rastreamento.
+- **Varredura Automática**: Detecta automaticamente dotfiles comuns (como `.bashrc`, `.zshrc`, `.gitconfig`).
+- **Configuração Centralizada**: Mantém um registro JSON de todos os seus arquivos rastreados.
+- **Multiplataforma**: Funciona em Linux, macOS e Windows.
 
-## 📦 Installation
+## 📦 Instalação
 
-### From Source
-1. Clone the repository:
+### A partir do código-fonte
+1. Clone o repositório:
    ```bash
    git clone https://github.com/SouzaF19/dotfile-manager.git
    cd dotfile-manager
    ```
-2. Install the package:
+2. Instale o pacote:
    ```bash
    pip install .
    ```
 
-## 🛠️ Usage
+## 🛠️ Como Usar
 
-Once installed, use the `dotfile` command:
+Após a instalação, utilize o comando `dotfile`:
 
-| Command | Description | Example |
+| Comando | Descrição | Exemplo |
 | :--- | :--- | :--- |
-| `init` | Initializes the manager | `dotfile init` |
-| `add <file>` | Adds a file to tracking | `dotfile add .bashrc` |
-| `list` | Lists all tracked files | `dotfile list` |
-| `remove <file>` | Stops tracking a file | `dotfile remove .bashrc` |
-| `scan` | Scans for common dotfiles | `dotfile scan` |
-| `help` | Shows help menu | `dotfile help` |
+| `init` | Inicializa o gerenciador | `dotfile init` |
+| `add <arquivo>` | Adiciona um arquivo ao rastreamento | `dotfile add .bashrc` |
+| `list` | Lista todos os arquivos rastreados | `dotfile list` |
+| `remove <arquivo>` | Remove o rastreamento de um arquivo | `dotfile remove .bashrc` |
+| `scan` | Varre em busca de dotfiles comuns | `dotfile scan` |
+| `help` | Mostra o menu de ajuda | `dotfile help` |
 
-## 📁 How it Works
+## 📁 Como Funciona
 
-The tool maintains a configuration file at `~/.dotfile_manager.json` which stores the list of files you want to keep track of. This makes it easy to script backups or sync these files to a Git repository.
+A ferramenta mantém um arquivo de configuração em `~/.dotfile_manager.json` que armazena a lista de arquivos que você deseja monitorar. Isso facilita a criação de scripts de backup ou a sincronização desses arquivos em um repositório Git.
 
-## 📄 License
+## 📄 Licença
 
-MIT License
+Licença MIT
