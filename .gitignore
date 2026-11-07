@@ -1,0 +1,14 @@
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+
+# Environment
+.venv/
+venv/
+ENV/
+
+# Config files
+.dotfile_manager.json
