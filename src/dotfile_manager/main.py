@@ -1,7 +1,7 @@
 """CLI for the Dotfile Manager."""
 
 import sys
-from _internal._core import get_tracked_files, add_tracked_file, remove_tracked_file, list_tracked_files
+from _internal._core import get_tracked_files, add_tracked_file, remove_tracked_file, list_tracked_files, scan_and_track
 
 def print_help():
     print("""
@@ -65,7 +65,7 @@ def main():
 
     elif sys.argv[1] == "scan":
         print("Varredurando para arquivos dotfiles...")
-        files = track_and_scan()
+        files = scan_and_track()
         if not files:
             print("Nenhum dotfile novo encontrado.")
         else:
