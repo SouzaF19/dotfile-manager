@@ -19,7 +19,7 @@ Uma ferramenta leve de CLI em Python para rastrear, gerenciar e fazer backup de 
    ```
 2. Instale o pacote:
    ```bash
-   pip install .
+   pip install dotf-manage
    ```
 
 ## 🛠️ Como Usar
